@@ -1,0 +1,500 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'C:\\Program Files\\nodejs\\node.exe',
+1 verbose cli   'C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'install' ]
+2 info using npm@3.3.12
+3 info using node@v5.4.1
+4 silly loadCurrentTree Starting
+5 silly install loadCurrentTree
+6 silly install readLocalPackageData
+7 silly install normalizeTree
+8 silly loadCurrentTree Finishing
+9 silly loadIdealTree Starting
+10 silly install loadIdealTree
+11 silly cloneCurrentTree Starting
+12 silly install cloneCurrentTreeToIdealTree
+13 silly cloneCurrentTree Finishing
+14 silly loadShrinkwrap Starting
+15 silly install loadShrinkwrap
+16 silly loadShrinkwrap Finishing
+17 silly loadAllDepsIntoIdealTree Starting
+18 silly install loadAllDepsIntoIdealTree
+19 silly fetchNamedPackageData @angular/animations
+20 silly mapToRegistry name @angular/animations
+21 silly mapToRegistry scope (from package name) @angular
+22 verbose mapToRegistry no registry URL found in name for scope @angular
+23 silly mapToRegistry using default registry
+24 silly mapToRegistry registry https://registry.npmjs.org/
+25 silly mapToRegistry uri https://registry.npmjs.org/@angular%2fanimations
+26 silly fetchNamedPackageData @angular/cdk
+27 silly mapToRegistry name @angular/cdk
+28 silly mapToRegistry scope (from package name) @angular
+29 verbose mapToRegistry no registry URL found in name for scope @angular
+30 silly mapToRegistry using default registry
+31 silly mapToRegistry registry https://registry.npmjs.org/
+32 silly mapToRegistry uri https://registry.npmjs.org/@angular%2fcdk
+33 silly fetchNamedPackageData @angular/common
+34 silly mapToRegistry name @angular/common
+35 silly mapToRegistry scope (from package name) @angular
+36 verbose mapToRegistry no registry URL found in name for scope @angular
+37 silly mapToRegistry using default registry
+38 silly mapToRegistry registry https://registry.npmjs.org/
+39 silly mapToRegistry uri https://registry.npmjs.org/@angular%2fcommon
+40 silly fetchNamedPackageData @angular/compiler
+41 silly mapToRegistry name @angular/compiler
+42 silly mapToRegistry scope (from package name) @angular
+43 verbose mapToRegistry no registry URL found in name for scope @angular
+44 silly mapToRegistry using default registry
+45 silly mapToRegistry registry https://registry.npmjs.org/
+46 silly mapToRegistry uri https://registry.npmjs.org/@angular%2fcompiler
+47 silly fetchNamedPackageData @angular/core
+48 silly mapToRegistry name @angular/core
+49 silly mapToRegistry scope (from package name) @angular
+50 verbose mapToRegistry no registry URL found in name for scope @angular
+51 silly mapToRegistry using default registry
+52 silly mapToRegistry registry https://registry.npmjs.org/
+53 silly mapToRegistry uri https://registry.npmjs.org/@angular%2fcore
+54 silly fetchNamedPackageData @angular/forms
+55 silly mapToRegistry name @angular/forms
+56 silly mapToRegistry scope (from package name) @angular
+57 verbose mapToRegistry no registry URL found in name for scope @angular
+58 silly mapToRegistry using default registry
+59 silly mapToRegistry registry https://registry.npmjs.org/
+60 silly mapToRegistry uri https://registry.npmjs.org/@angular%2fforms
+61 silly fetchNamedPackageData @angular/material
+62 silly mapToRegistry name @angular/material
+63 silly mapToRegistry scope (from package name) @angular
+64 verbose mapToRegistry no registry URL found in name for scope @angular
+65 silly mapToRegistry using default registry
+66 silly mapToRegistry registry https://registry.npmjs.org/
+67 silly mapToRegistry uri https://registry.npmjs.org/@angular%2fmaterial
+68 silly fetchNamedPackageData @angular/platform-browser
+69 silly mapToRegistry name @angular/platform-browser
+70 silly mapToRegistry scope (from package name) @angular
+71 verbose mapToRegistry no registry URL found in name for scope @angular
+72 silly mapToRegistry using default registry
+73 silly mapToRegistry registry https://registry.npmjs.org/
+74 silly mapToRegistry uri https://registry.npmjs.org/@angular%2fplatform-browser
+75 silly fetchNamedPackageData @angular/platform-browser-dynamic
+76 silly mapToRegistry name @angular/platform-browser-dynamic
+77 silly mapToRegistry scope (from package name) @angular
+78 verbose mapToRegistry no registry URL found in name for scope @angular
+79 silly mapToRegistry using default registry
+80 silly mapToRegistry registry https://registry.npmjs.org/
+81 silly mapToRegistry uri https://registry.npmjs.org/@angular%2fplatform-browser-dynamic
+82 silly fetchNamedPackageData @angular/router
+83 silly mapToRegistry name @angular/router
+84 silly mapToRegistry scope (from package name) @angular
+85 verbose mapToRegistry no registry URL found in name for scope @angular
+86 silly mapToRegistry using default registry
+87 silly mapToRegistry registry https://registry.npmjs.org/
+88 silly mapToRegistry uri https://registry.npmjs.org/@angular%2frouter
+89 silly fetchNamedPackageData bootstrap
+90 silly mapToRegistry name bootstrap
+91 silly mapToRegistry using default registry
+92 silly mapToRegistry registry https://registry.npmjs.org/
+93 silly mapToRegistry uri https://registry.npmjs.org/bootstrap
+94 silly fetchNamedPackageData rxjs
+95 silly mapToRegistry name rxjs
+96 silly mapToRegistry using default registry
+97 silly mapToRegistry registry https://registry.npmjs.org/
+98 silly mapToRegistry uri https://registry.npmjs.org/rxjs
+99 silly fetchNamedPackageData tslib
+100 silly mapToRegistry name tslib
+101 silly mapToRegistry using default registry
+102 silly mapToRegistry registry https://registry.npmjs.org/
+103 silly mapToRegistry uri https://registry.npmjs.org/tslib
+104 silly fetchNamedPackageData zone.js
+105 silly mapToRegistry name zone.js
+106 silly mapToRegistry using default registry
+107 silly mapToRegistry registry https://registry.npmjs.org/
+108 silly mapToRegistry uri https://registry.npmjs.org/zone.js
+109 verbose request uri https://registry.npmjs.org/@angular%2fanimations
+110 verbose request no auth needed
+111 info attempt registry request try #1 at 8:28:15 AM
+112 verbose request id d658847e83248414
+113 http request GET https://registry.npmjs.org/@angular%2fanimations
+114 verbose request uri https://registry.npmjs.org/@angular%2fcdk
+115 verbose request no auth needed
+116 info attempt registry request try #1 at 8:28:15 AM
+117 http request GET https://registry.npmjs.org/@angular%2fcdk
+118 verbose request uri https://registry.npmjs.org/@angular%2fmaterial
+119 verbose request no auth needed
+120 info attempt registry request try #1 at 8:28:15 AM
+121 http request GET https://registry.npmjs.org/@angular%2fmaterial
+122 verbose request uri https://registry.npmjs.org/bootstrap
+123 verbose request no auth needed
+124 info attempt registry request try #1 at 8:28:15 AM
+125 http request GET https://registry.npmjs.org/bootstrap
+126 verbose request uri https://registry.npmjs.org/tslib
+127 verbose request no auth needed
+128 info attempt registry request try #1 at 8:28:15 AM
+129 http request GET https://registry.npmjs.org/tslib
+130 verbose request uri https://registry.npmjs.org/@angular%2fcore
+131 verbose request no auth needed
+132 info attempt registry request try #1 at 8:28:15 AM
+133 verbose etag W/"ddfbd7554f04261d7dd410f783245592"
+134 verbose lastModified Wed, 15 Dec 2021 20:31:53 GMT
+135 http request GET https://registry.npmjs.org/@angular%2fcore
+136 verbose request uri https://registry.npmjs.org/@angular%2fforms
+137 verbose request no auth needed
+138 info attempt registry request try #1 at 8:28:15 AM
+139 verbose etag W/"e388d2076f0b83025a549671d10f3582"
+140 verbose lastModified Wed, 15 Dec 2021 20:31:37 GMT
+141 http request GET https://registry.npmjs.org/@angular%2fforms
+142 verbose request uri https://registry.npmjs.org/@angular%2fcommon
+143 verbose request no auth needed
+144 info attempt registry request try #1 at 8:28:15 AM
+145 verbose etag W/"439807c800c46fa3b5cad6413ff11e9c"
+146 verbose lastModified Wed, 15 Dec 2021 20:32:17 GMT
+147 http request GET https://registry.npmjs.org/@angular%2fcommon
+148 verbose request uri https://registry.npmjs.org/@angular%2fplatform-browser
+149 verbose request no auth needed
+150 info attempt registry request try #1 at 8:28:15 AM
+151 verbose etag W/"159029d05ce6311d54fdd7b1ac01a13f"
+152 verbose lastModified Wed, 15 Dec 2021 20:31:23 GMT
+153 http request GET https://registry.npmjs.org/@angular%2fplatform-browser
+154 verbose request uri https://registry.npmjs.org/@angular%2frouter
+155 verbose request no auth needed
+156 info attempt registry request try #1 at 8:28:15 AM
+157 verbose etag W/"6794f55be56252d73b5843105d587786"
+158 verbose lastModified Wed, 15 Dec 2021 20:31:09 GMT
+159 http request GET https://registry.npmjs.org/@angular%2frouter
+160 verbose request uri https://registry.npmjs.org/@angular%2fcompiler
+161 verbose request no auth needed
+162 info attempt registry request try #1 at 8:28:15 AM
+163 verbose etag W/"63d42dc28024c07a659230d58f9922df"
+164 verbose lastModified Wed, 15 Dec 2021 20:32:08 GMT
+165 http request GET https://registry.npmjs.org/@angular%2fcompiler
+166 verbose request uri https://registry.npmjs.org/@angular%2fplatform-browser-dynamic
+167 verbose request no auth needed
+168 info attempt registry request try #1 at 8:28:15 AM
+169 verbose etag W/"9ba85a31e67e28369bca4d652e78a197"
+170 verbose lastModified Wed, 15 Dec 2021 20:31:18 GMT
+171 http request GET https://registry.npmjs.org/@angular%2fplatform-browser-dynamic
+172 verbose request uri https://registry.npmjs.org/rxjs
+173 verbose request no auth needed
+174 info attempt registry request try #1 at 8:28:15 AM
+175 verbose etag W/"8a23bb142c448820c7f09f0406bbeed7"
+176 verbose lastModified Wed, 06 Oct 2021 21:03:30 GMT
+177 http request GET https://registry.npmjs.org/rxjs
+178 verbose request uri https://registry.npmjs.org/zone.js
+179 verbose request no auth needed
+180 info attempt registry request try #1 at 8:28:15 AM
+181 verbose etag W/"27f16a0d37c1dece234ec40f41917cdc"
+182 verbose lastModified Tue, 16 Feb 2021 18:37:31 GMT
+183 http request GET https://registry.npmjs.org/zone.js
+184 http 304 https://registry.npmjs.org/@angular%2fcore
+185 verbose headers { date: 'Wed, 22 Dec 2021 06:28:15 GMT',
+185 verbose headers   connection: 'keep-alive',
+185 verbose headers   'cf-ray': '6c1749fc39f26277-OTP',
+185 verbose headers   age: '263',
+185 verbose headers   'cache-control': 'public, max-age=300',
+185 verbose headers   etag: '"ddfbd7554f04261d7dd410f783245592"',
+185 verbose headers   'last-modified': 'Wed, 15 Dec 2021 20:31:53 GMT',
+185 verbose headers   vary: 'Accept-Encoding',
+185 verbose headers   'cf-cache-status': 'HIT',
+185 verbose headers   'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+185 verbose headers   'x-amz-replication-status': 'COMPLETED',
+185 verbose headers   server: 'cloudflare' }
+186 silly get cb [ 304,
+186 silly get   { date: 'Wed, 22 Dec 2021 06:28:15 GMT',
+186 silly get     connection: 'keep-alive',
+186 silly get     'cf-ray': '6c1749fc39f26277-OTP',
+186 silly get     age: '263',
+186 silly get     'cache-control': 'public, max-age=300',
+186 silly get     etag: '"ddfbd7554f04261d7dd410f783245592"',
+186 silly get     'last-modified': 'Wed, 15 Dec 2021 20:31:53 GMT',
+186 silly get     vary: 'Accept-Encoding',
+186 silly get     'cf-cache-status': 'HIT',
+186 silly get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+186 silly get     'x-amz-replication-status': 'COMPLETED',
+186 silly get     server: 'cloudflare' } ]
+187 verbose etag https://registry.npmjs.org/@angular%2fcore from cache
+188 verbose get saving @angular/core to C:\Users\ancat\AppData\Roaming\npm-cache\registry.npmjs.org\_40angular_252fcore\.cache.json
+189 http 304 https://registry.npmjs.org/@angular%2fforms
+190 verbose headers { date: 'Wed, 22 Dec 2021 06:28:15 GMT',
+190 verbose headers   connection: 'keep-alive',
+190 verbose headers   'cf-ray': '6c1749fc3e386255-OTP',
+190 verbose headers   age: '263',
+190 verbose headers   'cache-control': 'public, max-age=300',
+190 verbose headers   etag: '"e388d2076f0b83025a549671d10f3582"',
+190 verbose headers   'last-modified': 'Wed, 15 Dec 2021 20:31:37 GMT',
+190 verbose headers   vary: 'Accept-Encoding',
+190 verbose headers   'cf-cache-status': 'HIT',
+190 verbose headers   'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+190 verbose headers   'x-amz-replication-status': 'COMPLETED',
+190 verbose headers   server: 'cloudflare' }
+191 silly get cb [ 304,
+191 silly get   { date: 'Wed, 22 Dec 2021 06:28:15 GMT',
+191 silly get     connection: 'keep-alive',
+191 silly get     'cf-ray': '6c1749fc3e386255-OTP',
+191 silly get     age: '263',
+191 silly get     'cache-control': 'public, max-age=300',
+191 silly get     etag: '"e388d2076f0b83025a549671d10f3582"',
+191 silly get     'last-modified': 'Wed, 15 Dec 2021 20:31:37 GMT',
+191 silly get     vary: 'Accept-Encoding',
+191 silly get     'cf-cache-status': 'HIT',
+191 silly get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+191 silly get     'x-amz-replication-status': 'COMPLETED',
+191 silly get     server: 'cloudflare' } ]
+192 verbose etag https://registry.npmjs.org/@angular%2fforms from cache
+193 verbose get saving @angular/forms to C:\Users\ancat\AppData\Roaming\npm-cache\registry.npmjs.org\_40angular_252fforms\.cache.json
+194 http 304 https://registry.npmjs.org/@angular%2fcommon
+195 verbose headers { date: 'Wed, 22 Dec 2021 06:28:15 GMT',
+195 verbose headers   connection: 'keep-alive',
+195 verbose headers   'cf-ray': '6c1749fc49eb6283-OTP',
+195 verbose headers   age: '263',
+195 verbose headers   'cache-control': 'public, max-age=300',
+195 verbose headers   etag: '"439807c800c46fa3b5cad6413ff11e9c"',
+195 verbose headers   'last-modified': 'Wed, 15 Dec 2021 20:32:17 GMT',
+195 verbose headers   vary: 'Accept-Encoding',
+195 verbose headers   'cf-cache-status': 'HIT',
+195 verbose headers   'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+195 verbose headers   'x-amz-replication-status': 'PENDING',
+195 verbose headers   server: 'cloudflare' }
+196 silly get cb [ 304,
+196 silly get   { date: 'Wed, 22 Dec 2021 06:28:15 GMT',
+196 silly get     connection: 'keep-alive',
+196 silly get     'cf-ray': '6c1749fc49eb6283-OTP',
+196 silly get     age: '263',
+196 silly get     'cache-control': 'public, max-age=300',
+196 silly get     etag: '"439807c800c46fa3b5cad6413ff11e9c"',
+196 silly get     'last-modified': 'Wed, 15 Dec 2021 20:32:17 GMT',
+196 silly get     vary: 'Accept-Encoding',
+196 silly get     'cf-cache-status': 'HIT',
+196 silly get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+196 silly get     'x-amz-replication-status': 'PENDING',
+196 silly get     server: 'cloudflare' } ]
+197 verbose etag https://registry.npmjs.org/@angular%2fcommon from cache
+198 verbose get saving @angular/common to C:\Users\ancat\AppData\Roaming\npm-cache\registry.npmjs.org\_40angular_252fcommon\.cache.json
+199 http 304 https://registry.npmjs.org/@angular%2frouter
+200 verbose headers { date: 'Wed, 22 Dec 2021 06:28:15 GMT',
+200 verbose headers   connection: 'keep-alive',
+200 verbose headers   'cf-ray': '6c1749fc5daf627d-OTP',
+200 verbose headers   age: '263',
+200 verbose headers   'cache-control': 'public, max-age=300',
+200 verbose headers   etag: '"6794f55be56252d73b5843105d587786"',
+200 verbose headers   'last-modified': 'Wed, 15 Dec 2021 20:31:09 GMT',
+200 verbose headers   vary: 'Accept-Encoding',
+200 verbose headers   'cf-cache-status': 'HIT',
+200 verbose headers   'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+200 verbose headers   'x-amz-replication-status': 'COMPLETED',
+200 verbose headers   server: 'cloudflare' }
+201 silly get cb [ 304,
+201 silly get   { date: 'Wed, 22 Dec 2021 06:28:15 GMT',
+201 silly get     connection: 'keep-alive',
+201 silly get     'cf-ray': '6c1749fc5daf627d-OTP',
+201 silly get     age: '263',
+201 silly get     'cache-control': 'public, max-age=300',
+201 silly get     etag: '"6794f55be56252d73b5843105d587786"',
+201 silly get     'last-modified': 'Wed, 15 Dec 2021 20:31:09 GMT',
+201 silly get     vary: 'Accept-Encoding',
+201 silly get     'cf-cache-status': 'HIT',
+201 silly get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+201 silly get     'x-amz-replication-status': 'COMPLETED',
+201 silly get     server: 'cloudflare' } ]
+202 verbose etag https://registry.npmjs.org/@angular%2frouter from cache
+203 verbose get saving @angular/router to C:\Users\ancat\AppData\Roaming\npm-cache\registry.npmjs.org\_40angular_252frouter\.cache.json
+204 http 304 https://registry.npmjs.org/@angular%2fplatform-browser-dynamic
+205 verbose headers { date: 'Wed, 22 Dec 2021 06:28:15 GMT',
+205 verbose headers   connection: 'keep-alive',
+205 verbose headers   'cf-ray': '6c1749fc5a13fd11-OTP',
+205 verbose headers   age: '263',
+205 verbose headers   'cache-control': 'public, max-age=300',
+205 verbose headers   etag: '"9ba85a31e67e28369bca4d652e78a197"',
+205 verbose headers   'last-modified': 'Wed, 15 Dec 2021 20:31:18 GMT',
+205 verbose headers   vary: 'Accept-Encoding',
+205 verbose headers   'cf-cache-status': 'HIT',
+205 verbose headers   'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+205 verbose headers   'x-amz-replication-status': 'COMPLETED',
+205 verbose headers   server: 'cloudflare' }
+206 silly get cb [ 304,
+206 silly get   { date: 'Wed, 22 Dec 2021 06:28:15 GMT',
+206 silly get     connection: 'keep-alive',
+206 silly get     'cf-ray': '6c1749fc5a13fd11-OTP',
+206 silly get     age: '263',
+206 silly get     'cache-control': 'public, max-age=300',
+206 silly get     etag: '"9ba85a31e67e28369bca4d652e78a197"',
+206 silly get     'last-modified': 'Wed, 15 Dec 2021 20:31:18 GMT',
+206 silly get     vary: 'Accept-Encoding',
+206 silly get     'cf-cache-status': 'HIT',
+206 silly get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+206 silly get     'x-amz-replication-status': 'COMPLETED',
+206 silly get     server: 'cloudflare' } ]
+207 verbose etag https://registry.npmjs.org/@angular%2fplatform-browser-dynamic from cache
+208 verbose get saving @angular/platform-browser-dynamic to C:\Users\ancat\AppData\Roaming\npm-cache\registry.npmjs.org\_40angular_252fplatform-browser-dynamic\.cache.json
+209 http 304 https://registry.npmjs.org/rxjs
+210 verbose headers { date: 'Wed, 22 Dec 2021 06:28:15 GMT',
+210 verbose headers   connection: 'keep-alive',
+210 verbose headers   'cf-ray': '6c1749fc7a3a625f-OTP',
+210 verbose headers   age: '263',
+210 verbose headers   'cache-control': 'public, max-age=300',
+210 verbose headers   etag: '"8a23bb142c448820c7f09f0406bbeed7"',
+210 verbose headers   'last-modified': 'Wed, 06 Oct 2021 21:03:30 GMT',
+210 verbose headers   vary: 'Accept-Encoding',
+210 verbose headers   'cf-cache-status': 'HIT',
+210 verbose headers   'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+210 verbose headers   'x-amz-replication-status': 'COMPLETED',
+210 verbose headers   server: 'cloudflare' }
+211 silly get cb [ 304,
+211 silly get   { date: 'Wed, 22 Dec 2021 06:28:15 GMT',
+211 silly get     connection: 'keep-alive',
+211 silly get     'cf-ray': '6c1749fc7a3a625f-OTP',
+211 silly get     age: '263',
+211 silly get     'cache-control': 'public, max-age=300',
+211 silly get     etag: '"8a23bb142c448820c7f09f0406bbeed7"',
+211 silly get     'last-modified': 'Wed, 06 Oct 2021 21:03:30 GMT',
+211 silly get     vary: 'Accept-Encoding',
+211 silly get     'cf-cache-status': 'HIT',
+211 silly get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+211 silly get     'x-amz-replication-status': 'COMPLETED',
+211 silly get     server: 'cloudflare' } ]
+212 verbose etag https://registry.npmjs.org/rxjs from cache
+213 verbose get saving rxjs to C:\Users\ancat\AppData\Roaming\npm-cache\registry.npmjs.org\rxjs\.cache.json
+214 http 304 https://registry.npmjs.org/@angular%2fplatform-browser
+215 verbose headers { date: 'Wed, 22 Dec 2021 06:28:15 GMT',
+215 verbose headers   connection: 'keep-alive',
+215 verbose headers   'cf-ray': '6c1749fc7e0cace2-OTP',
+215 verbose headers   age: '263',
+215 verbose headers   'cache-control': 'public, max-age=300',
+215 verbose headers   etag: '"159029d05ce6311d54fdd7b1ac01a13f"',
+215 verbose headers   'last-modified': 'Wed, 15 Dec 2021 20:31:23 GMT',
+215 verbose headers   vary: 'Accept-Encoding',
+215 verbose headers   'cf-cache-status': 'HIT',
+215 verbose headers   'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+215 verbose headers   'x-amz-replication-status': 'COMPLETED',
+215 verbose headers   server: 'cloudflare' }
+216 silly get cb [ 304,
+216 silly get   { date: 'Wed, 22 Dec 2021 06:28:15 GMT',
+216 silly get     connection: 'keep-alive',
+216 silly get     'cf-ray': '6c1749fc7e0cace2-OTP',
+216 silly get     age: '263',
+216 silly get     'cache-control': 'public, max-age=300',
+216 silly get     etag: '"159029d05ce6311d54fdd7b1ac01a13f"',
+216 silly get     'last-modified': 'Wed, 15 Dec 2021 20:31:23 GMT',
+216 silly get     vary: 'Accept-Encoding',
+216 silly get     'cf-cache-status': 'HIT',
+216 silly get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+216 silly get     'x-amz-replication-status': 'COMPLETED',
+216 silly get     server: 'cloudflare' } ]
+217 verbose etag https://registry.npmjs.org/@angular%2fplatform-browser from cache
+218 verbose get saving @angular/platform-browser to C:\Users\ancat\AppData\Roaming\npm-cache\registry.npmjs.org\_40angular_252fplatform-browser\.cache.json
+219 http 304 https://registry.npmjs.org/zone.js
+220 verbose headers { date: 'Wed, 22 Dec 2021 06:28:15 GMT',
+220 verbose headers   connection: 'keep-alive',
+220 verbose headers   'cf-ray': '6c1749fc9f10625b-OTP',
+220 verbose headers   age: '264',
+220 verbose headers   'cache-control': 'public, max-age=300',
+220 verbose headers   etag: '"27f16a0d37c1dece234ec40f41917cdc"',
+220 verbose headers   'last-modified': 'Tue, 16 Feb 2021 18:37:31 GMT',
+220 verbose headers   vary: 'Accept-Encoding',
+220 verbose headers   'cf-cache-status': 'HIT',
+220 verbose headers   'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+220 verbose headers   server: 'cloudflare' }
+221 silly get cb [ 304,
+221 silly get   { date: 'Wed, 22 Dec 2021 06:28:15 GMT',
+221 silly get     connection: 'keep-alive',
+221 silly get     'cf-ray': '6c1749fc9f10625b-OTP',
+221 silly get     age: '264',
+221 silly get     'cache-control': 'public, max-age=300',
+221 silly get     etag: '"27f16a0d37c1dece234ec40f41917cdc"',
+221 silly get     'last-modified': 'Tue, 16 Feb 2021 18:37:31 GMT',
+221 silly get     vary: 'Accept-Encoding',
+221 silly get     'cf-cache-status': 'HIT',
+221 silly get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+221 silly get     server: 'cloudflare' } ]
+222 verbose etag https://registry.npmjs.org/zone.js from cache
+223 verbose get saving zone.js to C:\Users\ancat\AppData\Roaming\npm-cache\registry.npmjs.org\zone.js\.cache.json
+224 http 304 https://registry.npmjs.org/@angular%2fcompiler
+225 verbose headers { date: 'Wed, 22 Dec 2021 06:28:15 GMT',
+225 verbose headers   connection: 'keep-alive',
+225 verbose headers   'cf-ray': '6c1749fc8aabad1e-OTP',
+225 verbose headers   age: '263',
+225 verbose headers   'cache-control': 'public, max-age=300',
+225 verbose headers   etag: '"63d42dc28024c07a659230d58f9922df"',
+225 verbose headers   'last-modified': 'Wed, 15 Dec 2021 20:32:08 GMT',
+225 verbose headers   vary: 'Accept-Encoding',
+225 verbose headers   'cf-cache-status': 'HIT',
+225 verbose headers   'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+225 verbose headers   'x-amz-replication-status': 'PENDING',
+225 verbose headers   server: 'cloudflare' }
+226 silly get cb [ 304,
+226 silly get   { date: 'Wed, 22 Dec 2021 06:28:15 GMT',
+226 silly get     connection: 'keep-alive',
+226 silly get     'cf-ray': '6c1749fc8aabad1e-OTP',
+226 silly get     age: '263',
+226 silly get     'cache-control': 'public, max-age=300',
+226 silly get     etag: '"63d42dc28024c07a659230d58f9922df"',
+226 silly get     'last-modified': 'Wed, 15 Dec 2021 20:32:08 GMT',
+226 silly get     vary: 'Accept-Encoding',
+226 silly get     'cf-cache-status': 'HIT',
+226 silly get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+226 silly get     'x-amz-replication-status': 'PENDING',
+226 silly get     server: 'cloudflare' } ]
+227 verbose etag https://registry.npmjs.org/@angular%2fcompiler from cache
+228 verbose get saving @angular/compiler to C:\Users\ancat\AppData\Roaming\npm-cache\registry.npmjs.org\_40angular_252fcompiler\.cache.json
+229 http 200 https://registry.npmjs.org/tslib
+230 verbose headers { date: 'Wed, 22 Dec 2021 06:28:15 GMT',
+230 verbose headers   'content-type': 'application/json',
+230 verbose headers   'transfer-encoding': 'chunked',
+230 verbose headers   connection: 'keep-alive',
+230 verbose headers   'cf-ray': '6c1749fc39d3fd11-OTP',
+230 verbose headers   age: '253',
+230 verbose headers   'cache-control': 'public, max-age=300',
+230 verbose headers   etag: 'W/"ea88fcea82c94329959a4d1791952b54"',
+230 verbose headers   'last-modified': 'Wed, 11 Aug 2021 22:55:37 GMT',
+230 verbose headers   vary: 'accept-encoding, accept',
+230 verbose headers   'cf-cache-status': 'HIT',
+230 verbose headers   'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+230 verbose headers   'x-amz-replication-status': 'COMPLETED',
+230 verbose headers   server: 'cloudflare',
+230 verbose headers   'content-encoding': 'gzip' }
+231 silly get cb [ 200,
+231 silly get   { date: 'Wed, 22 Dec 2021 06:28:15 GMT',
+231 silly get     'content-type': 'application/json',
+231 silly get     'transfer-encoding': 'chunked',
+231 silly get     connection: 'keep-alive',
+231 silly get     'cf-ray': '6c1749fc39d3fd11-OTP',
+231 silly get     age: '253',
+231 silly get     'cache-control': 'public, max-age=300',
+231 silly get     etag: 'W/"ea88fcea82c94329959a4d1791952b54"',
+231 silly get     'last-modified': 'Wed, 11 Aug 2021 22:55:37 GMT',
+231 silly get     vary: 'accept-encoding, accept',
+231 silly get     'cf-cache-status': 'HIT',
+231 silly get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+231 silly get     'x-amz-replication-status': 'COMPLETED',
+231 silly get     server: 'cloudflare',
+231 silly get     'content-encoding': 'gzip' } ]
+232 verbose get saving tslib to C:\Users\ancat\AppData\Roaming\npm-cache\registry.npmjs.org\tslib\.cache.json
+233 verbose stack Error: Missing required argument #1
+233 verbose stack     at andLogAndFinish (C:\Program Files\nodejs\node_modules\npm\lib\fetch-package-metadata.js:31:3)
+233 verbose stack     at fetchPackageMetadata (C:\Program Files\nodejs\node_modules\npm\lib\fetch-package-metadata.js:51:22)
+233 verbose stack     at resolveWithNewModule (C:\Program Files\nodejs\node_modules\npm\lib\install\deps.js:445:12)
+233 verbose stack     at C:\Program Files\nodejs\node_modules\npm\lib\install\deps.js:446:7
+233 verbose stack     at C:\Program Files\nodejs\node_modules\npm\node_modules\iferr\index.js:13:50
+233 verbose stack     at C:\Program Files\nodejs\node_modules\npm\lib\fetch-package-metadata.js:37:12
+233 verbose stack     at addRequestedAndFinish (C:\Program Files\nodejs\node_modules\npm\lib\fetch-package-metadata.js:82:5)
+233 verbose stack     at returnAndAddMetadata (C:\Program Files\nodejs\node_modules\npm\lib\fetch-package-metadata.js:117:7)
+233 verbose stack     at pickVersionFromRegistryDocument (C:\Program Files\nodejs\node_modules\npm\lib\fetch-package-metadata.js:134:20)
+233 verbose stack     at C:\Program Files\nodejs\node_modules\npm\node_modules\iferr\index.js:13:50
+234 verbose cwd C:\Users\ancat\Desktop\AlMeuPhotoAlbum\PhotoAlbum\photo-album-web
+235 error Windows_NT 10.0.19042
+236 error argv "C:\\Program Files\\nodejs\\node.exe" "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "install"
+237 error node v5.4.1
+238 error npm  v3.3.12
+239 error code EMISSINGARG
+240 error typeerror Error: Missing required argument #1
+240 error typeerror     at andLogAndFinish (C:\Program Files\nodejs\node_modules\npm\lib\fetch-package-metadata.js:31:3)
+240 error typeerror     at fetchPackageMetadata (C:\Program Files\nodejs\node_modules\npm\lib\fetch-package-metadata.js:51:22)
+240 error typeerror     at resolveWithNewModule (C:\Program Files\nodejs\node_modules\npm\lib\install\deps.js:445:12)
+240 error typeerror     at C:\Program Files\nodejs\node_modules\npm\lib\install\deps.js:446:7
+240 error typeerror     at C:\Program Files\nodejs\node_modules\npm\node_modules\iferr\index.js:13:50
+240 error typeerror     at C:\Program Files\nodejs\node_modules\npm\lib\fetch-package-metadata.js:37:12
+240 error typeerror     at addRequestedAndFinish (C:\Program Files\nodejs\node_modules\npm\lib\fetch-package-metadata.js:82:5)
+240 error typeerror     at returnAndAddMetadata (C:\Program Files\nodejs\node_modules\npm\lib\fetch-package-metadata.js:117:7)
+240 error typeerror     at pickVersionFromRegistryDocument (C:\Program Files\nodejs\node_modules\npm\lib\fetch-package-metadata.js:134:20)
+240 error typeerror     at C:\Program Files\nodejs\node_modules\npm\node_modules\iferr\index.js:13:50
+240 error typeerror This is an error with npm itself. Please report this error at:
+240 error typeerror     <http://github.com/npm/npm/issues>
+241 verbose exit [ 1, true ]
