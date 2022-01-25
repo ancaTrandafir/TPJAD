@@ -12,4 +12,10 @@ public interface CommentDao extends CrudRepository<Comment, Long> {
     Comment save(Comment comment);
 
     List<Comment> findByPhotoId (Long photoId);
+
+    List<Comment> findAll();
+
+    Comment findByCommentId(Long commentId);
+
+    void delete(Comment comment);
 }

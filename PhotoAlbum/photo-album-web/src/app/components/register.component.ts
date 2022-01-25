@@ -19,7 +19,9 @@ export class Register {
         this.registered = true;
         this.newUser = new User();
       },
-      error => console.log(error)
-    );
+      error => {
+        console.log(error);
+        alert("Username already taken.");
+      });
   }
 }

@@ -7,6 +7,7 @@ import {Login} from './components/login.component';
 import {MyAlbum} from './components/my-album.component';
 import {AddPhoto} from './components/add-photo.component';
 import {ImageDetail} from './components/image-detail.component';
+import {UserManagement} from './components/user-management.component';
 
 const appRoutes: Routes = [
   {
@@ -37,7 +38,11 @@ const appRoutes: Routes = [
   {
     path: 'image-detail/:id',
     component: ImageDetail
-  }
+  },
+   {
+      path: 'user-management',
+      component: UserManagement
+    }
 
 ];
 

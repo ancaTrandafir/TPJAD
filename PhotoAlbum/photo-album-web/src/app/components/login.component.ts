@@ -26,8 +26,10 @@ export class Login {
                             this.model.username='';
                             this.model.password='';
                           },
-                  error => console.log(error)
-                );
+                  error => {
+                    alert("Invalid login. Please check your name and password.");
+                    console.log(error);
+                  });
               },
       error => console.log(error)
     );

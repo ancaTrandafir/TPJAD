@@ -1,6 +1,7 @@
 package com.tpjad.project.photoalbumapi.model;
 
 import com.fasterxml.jackson.annotation.JsonIdentityInfo;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.ObjectIdGenerators;
 import org.hibernate.annotations.*;
 
@@ -19,15 +20,37 @@ public class User {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long userId;
+
     private String firstName;
+
     private String lastName;
+
+    @Column(unique=true)
     private String userName;
+
+    @JsonIgnore
+    private String salt;
+
     private String password;
+
+    @JsonIgnore
+    private String hashedPassword;
+
+    @LazyCollection(LazyCollectionOption.FALSE)
+    @ManyToMany
+    @JoinTable(
+            name = "users_roles",
+            joinColumns = @JoinColumn(
+                    name = "user_id", referencedColumnName = "userId"),
+            inverseJoinColumns = @JoinColumn(
+                    name = "role_id", referencedColumnName = "roleId"))
+    private List<Role> roles;
 
     @CreationTimestamp
     private Date created;
 
-    @OneToMany(mappedBy = "user", fetch = FetchType.EAGER, orphanRemoval = true)
+    @LazyCollection(LazyCollectionOption.FALSE)
+    @OneToMany(mappedBy = "user",  orphanRemoval = true)
     private List<Photo> photoList;
 
     @LazyCollection(LazyCollectionOption.FALSE)
@@ -66,12 +89,28 @@ public class User {
         this.userName = userName;
     }
 
+    public String getSalt() {
+        return salt;
+    }
+
+    public void setSalt(String salt) {
+        this.salt = salt;
+    }
+
     public String getPassword() {
         return password;
     }
 
     public void setPassword(String password) {
         this.password = password;
+    }
+
+    public String getHashedPassword() {
+        return hashedPassword;
+    }
+
+    public void setHashedPassword(String hashedPassword) {
+        this.hashedPassword = hashedPassword;
     }
 
     public List<Photo> getPhotoList() {
@@ -88,5 +127,13 @@ public class User {
 
     public void setLikedPhotoList(List<Photo> likedPhotoList) {
         this.likedPhotoList = likedPhotoList;
+    }
+
+    public List getRoles() {
+        return roles;
+    }
+
+    public void setRoles(List roles) {
+        this.roles = roles;
     }
 }

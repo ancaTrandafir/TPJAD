@@ -9,8 +9,11 @@ import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.bind.annotation.*;
 
 import javax.servlet.ServletException;
+import java.security.NoSuchAlgorithmException;
 import java.util.Date;
 import java.util.Map;
+
+import static com.tpjad.project.photoalbumapi.helpers.PasswordHash.*;
 
 @RestController
 @RequestMapping("/api")
@@ -19,45 +22,55 @@ public class UserController {
     @Autowired
     private UserService userService;
 
-    @RequestMapping(value="/login", method = RequestMethod.POST)
-    public String login(@RequestBody Map<String, String> json) throws
-            ServletException {
-        if(json.get("username") == null || json.get("password") ==null) {
-            throw new ServletException("Please fill in username and password");
-        }
+    boolean validLogin = true;
+    String token;
+    String error;
+
+    @RequestMapping(value = "/login", method = RequestMethod.POST)
+    public String login(@RequestBody Map<String, String> json) {
 
         String userName = json.get("username");
-        String password = json.get("password");
 
-        System.out.println("username "+ userName);
+        try {
+            if (json.get("username") == null || json.get("password") == null) {
+                validLogin = false;
+                throw new ServletException("Please fill in username and password");
+            }
 
-        User user= userService.findByUserName(userName);
-        if (user==null) {
-            throw new ServletException("User name not found.");
-        }
+            User user = userService.findByUserName(userName);
+            if (user == null) {
+                validLogin = false;
+                throw new ServletException("User name not found.");
+            }
 
-        String pwd = user.getPassword();
+            String passwordFromLogin = get_SHA_512_SecurePassword(json.get("password"), user.getSalt());
+            String securedPasswordFromDb = user.getHashedPassword();
 
-        if(!password.equals(pwd)) {
-            throw new ServletException("Invalid login. Please check your name and password");
-        }
+            if (!passwordFromLogin.equals(securedPasswordFromDb)) {
+                validLogin = false;
+                throw new ServletException("Invalid login. Please check your name and password.");
+            }
 
-        if(password.equals("admin")) {
-            return Jwts.builder().setSubject(userName).claim("roles", "admin").setIssuedAt(new Date())
+            token = Jwts.builder().setSubject(userName).claim("roles", "user").setIssuedAt(new Date())
                     .signWith(SignatureAlgorithm.HS256, "secretkey").compact();
+
+            System.out.println("token " + token);
+
+            return  token;
+
+        } catch (ServletException ex) {
+            System.out.println(ex.getMessage());
+            error = ex.getMessage();
+
         }
-
-        String token = Jwts.builder().setSubject(userName).claim("roles", "user").setIssuedAt(new Date())
-                .signWith(SignatureAlgorithm.HS256, "secretkey").compact();
-
-        System.out.println("token "+ token);
-
-        return token;
+        return error;
     }
 
 
+
+    @Transactional
     @RequestMapping(value = "/register", method = RequestMethod.POST)
-    public User registerUser(@RequestBody User user) {
+    public User registerUser(@RequestBody User user) throws NoSuchAlgorithmException {
         return userService.save(user);
     }
 

@@ -1,8 +1,11 @@
 package com.tpjad.project.photoalbumapi.model;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
 import com.fasterxml.jackson.annotation.JsonIdentityInfo;
 import com.fasterxml.jackson.annotation.ObjectIdGenerators;
 import org.hibernate.annotations.CreationTimestamp;
+import org.hibernate.annotations.LazyCollection;
+import org.hibernate.annotations.LazyCollectionOption;
 
 import javax.persistence.*;
 import java.util.Date;
@@ -16,12 +19,17 @@ public class Photo {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long photoId;
+
     private String photoName;
+
     private String title;
+
     private String description;
+
     private String imageName;
 
     @CreationTimestamp
+    @JsonFormat(pattern="yyyy-MM-dd HH:mm:ss")
     private Date created;
 
     @ManyToOne
@@ -29,7 +37,8 @@ public class Photo {
 
     private int likes;
 
-    @OneToMany(mappedBy = "photo",  fetch = FetchType.EAGER, cascade = CascadeType.ALL)
+    @LazyCollection(LazyCollectionOption.FALSE)
+    @OneToMany(mappedBy = "photo", cascade = CascadeType.REMOVE)
     private List<Comment> commentList;
 
     public Long getPhotoId() {

@@ -34,7 +34,6 @@ export class LoginService {
 
   checkLogin() {
     if (localStorage.getItem("currentUserName")!=null && localStorage.getItem("currentUserName")!='' && localStorage.getItem("token")!=null && localStorage.getItem("token")!='') {
-
       return true;
     } else {
       return false;

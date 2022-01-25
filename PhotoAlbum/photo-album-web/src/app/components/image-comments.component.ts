@@ -13,8 +13,8 @@ import {PhotoService} from '../services/photo.service';
 export class ImageComments {
   @Input('photo') photo: Photo;
   myLocalStorage = localStorage;
-  user: User=new User();
-  newComment = new Comment ();
+  user: User = new User();
+  newComment = new Comment();
   sameUser: boolean;
 
   constructor (private userService: UserService, private commentService: CommentService, private photoService: PhotoService) {}
@@ -36,8 +36,8 @@ export class ImageComments {
     console.log(this.photo);
     console.log(this.photo.commentList);
     this.newComment.photo=this.photo;
-    this.newComment.userName=this.user.userName;
-    this.newComment.photoId=this.photo.photoId;
+    this.newComment.userName = this.user.userName;
+    this.newComment.photoId = this.photo.photoId;
     this.commentService.addComment(this.newComment).subscribe(
       photo => this.photoService.getPhotoById(this.photo.photoId).subscribe(
         photo => this.photo = JSON.parse(JSON.stringify(photo)),

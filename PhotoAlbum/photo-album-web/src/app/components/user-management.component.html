@@ -1,0 +1,52 @@
+<br><br><br><br>
+<div class="ui one column stackable center aligned page grid"><br>
+  <h2>Users' Activity</h2>
+  <div class="row">
+    <table class="ui celled table">
+      <tr>
+        <th scope="col">
+          <div class="p-2 text-uppercase">Username</div>
+        </th>
+        <th scope="col">
+          <div class="p-2 text-uppercase"> Uploaded Photos</div>
+        </th>
+        <th scope="col">
+          <div class="p-2 text-uppercase"> Likes Given</div>
+        </th>
+        <th scope="col">
+          <div class="p-2 text-uppercase"> Content of Written Comments</div>
+        </th>
+        <th scope="col">
+          <div class="p-2 text-uppercase"> Get Sent Comments</div>
+        </th>
+        <th scope="col">
+          <div class="p-2 text-uppercase"> Delete User</div>
+        </th>
+      </tr>
+      <tr *ngFor="let u of users">
+        <td>{{u.userName}}</td>
+        <td><ng-container>
+      <tr *ngFor="let photo of u.photoList">
+        <img src='http://localhost:8888/images/{{photo.imageName}}' class='ui image small centered' />  {{photo.created}}
+        <td><i class="thumbs outline up icon"></i>{{photo.likes}}</td>
+        <td><button (click)="deletePhoto(photo)" class="btn btn-delete"><i class="trash alternate icon"></i>Delete Photo</button></td>
+      </tr>
+        </ng-container>
+        </td>
+        <td> {{u.likedPhotoList.length}}</td>
+        <td>
+          <tr *ngFor="let comm of comments">
+          <ng-container>
+          <tr *ngIf="u.userName === comm.userName">
+            {{comm.content}}
+            <button *ngIf="u.userName === comm.userName" (click)="deleteComment(comm)" class="btn btn-delete"><i class="trash alternate icon"></i>Delete Comment</button>
+          </tr>
+          </ng-container>
+          
+        </td>
+        <td><button (click)="getCommentsGiven(user)"><i class="left arrow icon"></i></button></td>
+        <td><button (click)="deleteUser(u)" class="btn btn-delete"><i class="trash alternate icon"></i>Delete User</button></td>
+      </tr>
+    </table>
+  </div>
+</div>

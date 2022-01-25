@@ -16,6 +16,7 @@ import {AddPhoto} from './components/add-photo.component';
 import {ImageComments} from './components/image-comments.component';
 import {ImageDetail} from './components/image-detail.component';
 import {PhotoRow} from './components/photo-row.component';
+import {UserManagement} from './components/user-management.component';
 
 import {PhotoService} from './services/photo.service';
 import {RegisterService} from './services/register.service';
@@ -38,7 +39,8 @@ import {CommentService} from './services/comment.service';
     AddPhoto,
     ImageComments,
     ImageDetail,
-    PhotoRow
+    PhotoRow,
+    UserManagement
   ],
   imports: [
     BrowserModule,

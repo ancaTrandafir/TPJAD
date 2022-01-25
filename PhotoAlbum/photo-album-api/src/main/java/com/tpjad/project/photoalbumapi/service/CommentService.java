@@ -9,4 +9,10 @@ public interface CommentService {
 
     List<Comment> findByPhotoId (Long photoId);
 
+    List<Comment> findAll();
+
+    Comment findByCommentId(Long commentId);
+
+    void  delete(long id);
+
 }

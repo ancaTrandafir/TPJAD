@@ -12,6 +12,9 @@
     <a *ngIf="loginService.checkLogin()"class="item" routerLink="/my-album" routerLinkActive="active">
       My Album
     </a>
+    <a *ngIf="loginService.checkLogin() && adminLoggedIn"class="item" routerLink="/user-management" routerLinkActive="active">
+      User Management
+    </a>
   </div>
   <div class="right menu ">
     <a *ngIf="!loginService.checkLogin()" class="item" routerLink="/register" routerLinkActive="active" >

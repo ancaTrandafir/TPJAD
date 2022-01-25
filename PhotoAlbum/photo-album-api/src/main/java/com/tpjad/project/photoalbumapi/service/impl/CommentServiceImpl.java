@@ -22,4 +22,17 @@ public class CommentServiceImpl implements CommentService {
         return commentDao.findByPhotoId(photoId);
     }
 
+    public List<Comment> findAll() {
+            return commentDao.findAll();
+    }
+
+    public Comment findByCommentId(Long commentId) {
+        return commentDao.findByCommentId(commentId);
+    }
+
+    public void delete(long id){
+        Comment commentToDelete = findByCommentId(id);
+        commentDao.delete(commentToDelete);
+    }
+
 }
