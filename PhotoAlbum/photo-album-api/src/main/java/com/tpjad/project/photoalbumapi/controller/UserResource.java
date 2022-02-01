@@ -18,23 +18,22 @@ public class UserResource {
     @Autowired
     private UserService userService;
 
-    @RequestMapping(value = "/user/users", method = RequestMethod.GET)
+    @GetMapping("/user/users")
     public List<User> findAllUsers() {
         return userService.findAllUsers();
     }
 
-    @RequestMapping(value = "/user/userName", method = RequestMethod.POST)
+    @PostMapping("/user/userName")
     public User findByUserName(@RequestBody String userName) {
-
         return userService.findByUserName(userName);
     }
 
-    @RequestMapping(value = "/user/update", method = RequestMethod.POST)
+    @PostMapping("/user/update")
     public User updateUser(@RequestBody User user) throws NoSuchAlgorithmException {
         return userService.save(user);
     }
 
-    @RequestMapping(value = "/user/delete", method = RequestMethod.DELETE)
+    @DeleteMapping("/user/delete")
     public void deleteUser(@RequestBody User user) {
         userService.delete(user);
     }

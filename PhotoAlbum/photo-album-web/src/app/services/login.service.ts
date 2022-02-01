@@ -1,6 +1,5 @@
 import {Injectable} from "@angular/core";
 import {HttpClient, HttpHeaders} from '@angular/common/http';
-import {Observable}     from 'rxjs';
 
 @Injectable()
 export class LoginService {
@@ -22,7 +21,7 @@ export class LoginService {
   getToken(token:any) {
     let tokenUrl2 = "http://localhost:8888/rest/user/users";
     console.log('Bearer '+token);
-    let getHeaders = new HttpHeaders({'Content-Type': 'application/json', 'Access-Control-Allow-Origin': 'http://localhost:8080', 'Access-Control-Allow-Methods': 'GET, OPTIONS, POST, PUT', 'Access-Control-Allow-Headers': 'X-Token', 'Authorization':'Bearer '+token}), responseType:'text' ;
+    let getHeaders = new HttpHeaders({'Content-Type': 'application/json', 'Access-Control-Allow-Origin': 'http://localhost:8888', 'Access-Control-Allow-Methods': 'GET, OPTIONS, POST, PUT', 'Access-Control-Allow-Headers': 'X-Token', 'Authorization':'Bearer '+token}), responseType:'text' ;
     return this.http.get(tokenUrl2, {headers: getHeaders})
   }
 

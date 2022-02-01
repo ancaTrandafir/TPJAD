@@ -1,8 +1,6 @@
 import {Component, Input} from '@angular/core';
-import {NavBar} from './nav-bar.component';
 import {Photo} from '../models/photo';
 import {PhotoService} from '../services/photo.service';
-import {ImageComments} from './image-comments.component';
 import {UserService} from '../services/user.service';
 import {User} from '../models/user';
 import { ActivatedRoute, Params, Router } from '@angular/router';

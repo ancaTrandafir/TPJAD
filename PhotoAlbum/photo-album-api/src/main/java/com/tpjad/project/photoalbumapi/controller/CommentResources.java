@@ -21,7 +21,7 @@ public class CommentResources {
     @Autowired
     private CommentService commentService;
 
-    @RequestMapping(value = "/comment/add", method = RequestMethod.POST)
+    @PostMapping("/comment/add")
     public void addComment (@RequestBody Comment comment) {
         Photo photo = photoService.findByPhotoId(comment.getPhotoId());
         List<Comment> commentList=photo.getCommentList();

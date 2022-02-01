@@ -26,7 +26,7 @@ public class UserController {
     String token;
     String error;
 
-    @RequestMapping(value = "/login", method = RequestMethod.POST)
+    @PostMapping("/login")
     public String login(@RequestBody Map<String, String> json) {
 
         String userName = json.get("username");
@@ -66,10 +66,7 @@ public class UserController {
         return error;
     }
 
-
-
-    @Transactional
-    @RequestMapping(value = "/register", method = RequestMethod.POST)
+    @PostMapping("/register")
     public User registerUser(@RequestBody User user) throws NoSuchAlgorithmException {
         return userService.save(user);
     }

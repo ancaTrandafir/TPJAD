@@ -15,7 +15,7 @@ public class PhotoController {
     @Autowired
     private PhotoService photoService;
 
-    @RequestMapping("/allPhotos")
+    @GetMapping("/allPhotos")
     public List<Photo> getAllPhotos () {
         return photoService.findAll();
     }

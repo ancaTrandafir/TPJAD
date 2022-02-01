@@ -30,7 +30,7 @@ public class PhotoResource {
     @Autowired
     private CommentService commentService;
 
-    @RequestMapping(value = "/photo/upload", method = RequestMethod.POST)
+    @PostMapping("/photo/upload")
     public String upload(HttpServletResponse response, HttpServletRequest request) {
         MultipartHttpServletRequest multipartRequest = (MultipartHttpServletRequest) request;
         Iterator<String> it = multipartRequest.getFileNames();
@@ -49,7 +49,7 @@ public class PhotoResource {
         return "Upload Success!";
     }
 
-    @RequestMapping(value = "/photo/add", method = RequestMethod.POST)
+    @PostMapping("/photo/add")
     public Photo addPhoto(@RequestBody Photo photo) {
         photo.setImageName(imageName);
         return photoService.save(photo);
@@ -62,17 +62,17 @@ public class PhotoResource {
         return new ResponseEntity<>(id, HttpStatus.OK);
     }
 
-    @RequestMapping(value="/photo/user", method = RequestMethod.POST)
+    @PostMapping("/photo/user")
     public List<Photo> getPhotosByUser (@RequestBody User user) {
         return photoService.findByUser(user);
     }
 
-    @RequestMapping(value="/photo/photoId", method = RequestMethod.POST)
+    @PostMapping("/photo/photoId")
     public Photo getPhotoByPhotoId (@RequestBody Long photoId) {
         return photoService.findByPhotoId(photoId);
     }
 
-    @RequestMapping(value = "/photo/update", method = RequestMethod.POST)
+    @PostMapping("/photo/update")
     public void updatePhoto(@RequestBody Photo photo) {
         Photo currentPhoto = photoService.findByPhotoId(photo.getPhotoId());
         currentPhoto.setLikes(photo.getLikes());
