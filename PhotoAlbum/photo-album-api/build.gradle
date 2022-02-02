@@ -7,19 +7,9 @@ plugins {
 
 group = 'com.tpjad.project'
 version = '1.0'
-sourceCompatibility = '1.8'
-
-configurations {
-	compileOnly {
-		extendsFrom annotationProcessor
-	}
-}
 
 repositories {
 	mavenCentral()
-	maven {
-		url "https://plugins.gradle.org/m2/"
-	}
 }
 
 dependencies {
@@ -61,12 +51,12 @@ jacocoTestReport {
 		classDirectories.setFrom(files(classDirectories.files.collect {
 			fileTree(dir: it,
 					exclude: [
+							'com/tpjad/project/photoalbumapi/config/**',
+							'com/tpjad/project/photoalbumapi/controller/**',
+							'com/tpjad/project/photoalbumapi/helpers/**',
+							'com/tpjad/project/photoalbumapi/model/**',
 							'com/tpjad/project/photoalbumapi/dao/**',
-							'com/tpjad/project/photoalbumapi/resource/**',
-							'com/tpjad/project/photoalbumapi/exceptions/**',
-							'com/tpjad/project/photoalbumapi/security/**',
-							'com/tpjad/project/photoalbumapi/utils/**',
-							'com/tpjad/project/photoalbumapi/service/model'
+							'com/tpjad/project/photoalbumapi/PhotoAlbumApi**'
 					]
 			)
 		}))

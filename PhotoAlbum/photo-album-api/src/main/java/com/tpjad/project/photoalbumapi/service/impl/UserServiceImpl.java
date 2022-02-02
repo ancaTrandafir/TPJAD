@@ -4,7 +4,6 @@ import com.tpjad.project.photoalbumapi.dao.RoleDao;
 import com.tpjad.project.photoalbumapi.dao.UserDao;
 import com.tpjad.project.photoalbumapi.model.User;
 import com.tpjad.project.photoalbumapi.service.UserService;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -18,11 +17,13 @@ import static com.tpjad.project.photoalbumapi.helpers.PasswordHash.get_SHA_512_S
 @Transactional
 @Service
 public class UserServiceImpl implements UserService {
+    private final UserDao userDao;
+    private final RoleDao roleDao;
 
-    @Autowired
-    private UserDao userDao;
-    @Autowired
-    private RoleDao roleDao;
+    public UserServiceImpl(UserDao userDao, RoleDao roleDao) {
+        this.userDao = userDao;
+        this.roleDao = roleDao;
+    }
 
     public List<User> findAllUsers() {
         return userDao.findAll();

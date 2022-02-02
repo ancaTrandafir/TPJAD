@@ -4,16 +4,17 @@ import com.tpjad.project.photoalbumapi.dao.PhotoDao;
 import com.tpjad.project.photoalbumapi.model.Photo;
 import com.tpjad.project.photoalbumapi.model.User;
 import com.tpjad.project.photoalbumapi.service.PhotoService;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
 
 @Service
 public class PhotoServiceImpl implements PhotoService {
+    private final PhotoDao photoDao;
 
-    @Autowired
-    private PhotoDao photoDao;
+    public PhotoServiceImpl(PhotoDao photoDao) {
+        this.photoDao = photoDao;
+    }
 
     public Photo save(Photo photo) {
         return photoDao.save(photo);

@@ -10,9 +10,10 @@ import java.util.List;
 
 @Service
 public class CommentServiceImpl implements CommentService {
-
-    @Autowired
-    private CommentDao commentDao;
+    private final CommentDao commentDao;
+    public CommentServiceImpl(CommentDao commentDao) {
+        this.commentDao = commentDao;
+    }
 
     public Comment save(Comment comment) {
         return commentDao.save(comment);
